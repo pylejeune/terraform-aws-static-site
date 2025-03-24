@@ -1,8 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
 
-## Coût infrastructures
+## Coût infrastructure
 
-[Estimation](infracost.html)
+![Estimation](infracost.png)
 
 ## Requirements
 
