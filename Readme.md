@@ -1,4 +1,9 @@
 <!-- BEGIN_TF_DOCS -->
+
+## Coût infrastructures
+
+[Estimation](infracost.html)
+
 ## Requirements
 
 No requirements.
