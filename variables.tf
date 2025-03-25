@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "Région AWS où déployer les ressources"
   type        = string
-  default     = "eu-west-3"  # Paris
+  default     = "eu-west-3" # Paris
 }
 
 variable "bucket_name" {
@@ -24,4 +24,15 @@ variable "route53_zone_id" {
   description = "ID de la zone Route 53 existante (si create_route53_zone = false)"
   type        = string
   default     = ""
-} 
+}
+
+variable "create_acm" {
+  description = "Création d'un certificat"
+  type        = bool
+  default     = false
+}
+variable "create_policy" {
+  description = "Création des politique de sécurité dans IAM"
+  type        = bool
+  default     = false
+}

@@ -1,3 +1,4 @@
+
 output "website_bucket_name" {
   description = "Nom du bucket S3 hébergeant le site web"
   value       = aws_s3_bucket.website_bucket.id
@@ -26,4 +27,10 @@ output "cloudfront_domain_name" {
 output "route53_name_servers" {
   description = "Serveurs de noms pour la zone Route 53 (si créée)"
   value       = var.create_route53_zone ? aws_route53_zone.main[0].name_servers : null
-} 
+}
+
+output "cloudfront_viewer_protocol_policy" {
+  description = "value viewer_protocol_policy"
+  value       = aws_cloudfront_distribution.website_distribution.default_cache_behavior
+
+}

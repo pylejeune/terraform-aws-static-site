@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur Mon Site</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            margin: 1rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .feature h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur <span class="highlight">Mon Site</span></h1>
+        <p>Ce site est hébergé sur AWS S3 et distribué via CloudFront, déployé avec Terraform.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Infrastructure as Code</h3>
+                <p>Site entièrement déployé avec Terraform pour une infrastructure reproductible et versionnable.</p>
+            </div>
+            <div class="feature">
+                <h3>Performance</h3>
+                <p>Distribution mondiale via le réseau CloudFront pour des temps de chargement optimaux.</p>
+            </div>
+            <div class="feature">
+                <h3>Sécurité</h3>
+                <p>Accès sécurisé via Origin Access Control et configuration optimisée pour la protection des données.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© Créé avec Terraform et AWS</p>
+        </div>
+    </div>
+</body>
+</html>

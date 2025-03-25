@@ -1,10 +1,13 @@
 <!-- BEGIN_TF_DOCS -->
 
-## Coût infrastructure
+## Coût infrastructure (infracost)
 
 ![Estimation](infracost.png)
 
-## Requirements
+## Schema Architecture (brainboard)
+![image](https://github.com/user-attachments/assets/b563863b-fbf7-4432-8898-c9499c298114)
+
+## Requirements (terraform-docs)
 
 No requirements.
 
