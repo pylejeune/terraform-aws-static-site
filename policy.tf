@@ -1,3 +1,4 @@
+#https://github.com/JamesWoolfenden/pike?tab=readme-ov-file#macos
 #pike scan -o terraform -d . > policy.tf
 resource "aws_iam_policy" "terraform_pike" {
   name_prefix = "terraform_pike"
